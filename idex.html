@@ -1,0 +1,257 @@
+<!-- <section class="nav">
+    <i class="fa fa-bars" id="bars"></i>
+    <div class="logo">
+      <i class="fa fa-home"></i>
+    </div>
+  <menu id="artcl-menu">
+    <article class="class">Salle Disponible</article>
+    <article class="class">Filière</article>
+    <article class="class">Salle</article>
+    <article class="class">Grande</article>
+  </menu>
+  <form action="" method="">
+    <input type="text" placeholder="Recherche">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  </section>
+  
+  <section class="etage">
+         <article class="etage_name">1 etage</article>
+        <menu class="menu__floor">
+            <article class="floor">
+                <div class="image"><img src="./images/etg.jpg" alt=""></div>
+                <div class="bottom">
+                     <div class="Salle__name">Nom de Salle</div>
+                    <div class="circle1"></div>
+                </div>
+            </article>
+            <article class="floor">
+                <div class="image"><img src="./images/etg.jpg" alt=""></div>
+                <div class="bottom">
+                    <div class="Salle__name">Nom de Salle</div>
+                      <div class="circle1"></div>
+                </div>
+            </article>
+            <article class="floor">
+                <div class="image"><img src="./images/etg.jpg" alt=""></div>
+                <div class="bottom">
+                    <div class="Salle__name">Nom de Salle</div>
+                        <div class="circle1"></div>
+                </div>
+            </article>
+            <article class="floor">
+                <div class="image"><img src="./images/etg.jpg" alt=""></div>
+                <div class="bottom">
+                  <div class="Salle__name">Nom de Salle</div>
+                        <div class="circle1"></div>
+                  </div>
+            </article>
+   </menu>
+  </section>
+  
+  <section class="etage">
+    <article class="etage_name">2  etage</article>
+   <menu class="menu__floor">
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+                <div class="Salle__name">Nom de Salle</div>
+               <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+               <div class="Salle__name">Nom de Salle</div>
+                 <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+               <div class="Salle__name">Nom de Salle</div>
+                   <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+             <div class="Salle__name">Nom de Salle</div>
+                   <div class="circle1"></div>
+             </div>
+       </article>
+  </menu>
+  </section>
+  <section class="etage">
+    <article class="etage_name">3 etage</article>
+   <menu class="menu__floor">
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+                <div class="Salle__name">Nom de Salle</div>
+               <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+               <div class="Salle__name">Nom de Salle</div>
+                 <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+               <div class="Salle__name">Nom de Salle</div>
+                   <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+             <div class="Salle__name">Nom de Salle</div>
+                   <div class="circle1"></div>
+             </div>
+       </article>
+  </menu>
+  </section>
+  <section class="etage">
+    <article class="etage_name">4 etage</article>
+   <menu class="menu__floor">
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+                <div class="Salle__name">Nom de Salle</div>
+               <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+               <div class="Salle__name">Nom de Salle</div>
+                 <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+               <div class="Salle__name">Nom de Salle</div>
+                   <div class="circle1"></div>
+           </div>
+       </article>
+       <article class="floor">
+           <div class="image"><img src="./images/etg.jpg" alt=""></div>
+           <div class="bottom">
+             <div class="Salle__name">Nom de Salle</div>
+                   <div class="circle1"></div>
+             </div>
+       </article>
+  </menu>
+  </section> -->
+
+  <header class="container-fluid"></header>
+  <div class="container">
+      <div class="row my-5" id="roomsContainer">
+      </div>
+  </div>
+  
+  <script>
+      class Room{
+          constructor(id, name, floor, available){
+              this.id=id, 
+              this.name=name,
+              this.floor=floor,
+              this.available=available
+              this.imagePath="./images/etg.jpg"
+          }
+          createCardElement(){
+              const cardDiv= document.createElement("div");
+          cardDiv.classList.add("col-6");
+              const innerHTML=`
+              <div class="card">
+                  <div class="card-img">
+                          <img src="${this.imagePath}" alt="" width="100%" height="100%">
+                  </div>
+                  <div class="card-footer bg-info d-flex justify-content-between">
+                      <div class="card-title">${this.name}</div>
+        <span class="badge badge-pill ${this.available ?'badge-success bg-success text-success' : 'badge-danger bg-danger text-danger' }" 
+                          style="width: 25px; height: 25px; border-radius: 50px;">0</span>
+                      </div>
+              </div>`
+  
+              cardDiv.innerHTML=innerHTML;
+              return cardDiv;
+          }
+         
+      }
+      class RoomManager{
+          constructor(){
+              this.rooms = []
+          }
+          addRoom(room){
+              this.rooms.push(room)
+          }
+  
+         displayRoom(){
+          const roomsContainer=document.getElementById("roomsContainer")
+          let currentFloor = null;
+          this.rooms.forEach(room=>{
+              if(currentFloor !== room.floor){
+                  const floorTitle = document.createElement("h5");
+                  floorTitle.textContent=`${room.floor}e Etage`;
+                  roomsContainer.appendChild(floorTitle);
+                  currentFloor=room.floor;
+                  }
+  
+                  const CardElement = room.createCardElement();
+                  roomsContainer.appendChild(CardElement) 
+  
+              })
+         }
+      }
+       roomManager = new RoomManager();
+       roomManager.addRoom(new Room(1, "Albert Camus", 1,true))
+       roomManager.addRoom(new Room(2, "Adward Mills", 1,false))
+       roomManager.addRoom(new Room(3, "Leon Jouhaux", 1,false))
+       roomManager.addRoom(new Room(4, "Al gore", 1,true))
+       roomManager.addRoom(new Room(5, "Paul Robin", 1,false))
+       roomManager.addRoom(new Room(6, "Franco Modigliani", 1,false))
+       
+       roomManager.addRoom(new Room(7, "Albert Einstien", 2,false))
+       roomManager.addRoom(new Room(8, "Steve Jobs",2,false))
+       roomManager.addRoom(new Room(9, "Bertrand Arthur", 2,false))
+       roomManager.addRoom(new Room(10, "Lars Peter", 2,false))
+       roomManager.addRoom(new Room(11, "Arthur Hendeerson", 2,false))
+       roomManager.addRoom(new Room(12, "Alan Mathison2", 2,false))
+       
+       roomManager.addRoom(new Room(13, "John Maxwell",3,false))
+       roomManager.addRoom(new Room(14, "Max Theiler", 3,false))
+       roomManager.addRoom(new Room(15, "Ellen Johnson", 3,false))
+       roomManager.addRoom(new Room(16, "Kofi Annan", 3,false))
+       roomManager.addRoom(new Room(17, "Wangari Maathai", 3,false))
+      
+       roomManager.addRoom(new Room(13, "John Maxwell",4,false))
+       roomManager.addRoom(new Room(14, "Max Theiler", 4,false))
+       roomManager.addRoom(new Room(15, "Ellen Johnson", 4,false))
+       roomManager.addRoom(new Room(16, "Kofi Annan", 4,false))
+       roomManager.addRoom(new Room(17, "Wangari Maathai", 4,false))
+         
+       window.onload=()=> roomManager.displayRoom()
+  
+  //     Ce code est écrit en JavaScript et définit deux classes: Room et RoomManager.
+  
+  // La classe Room représente une pièce avec des propriétés telles que l'identifiant (id), 
+  //le nom (name), l'étage (floor), et la disponibilité (available).
+  // Elle a également une méthode createCardElement qui génère dynamiquement un élément de carte HTML pour représenter visuellement la pièce.
+  
+  // La classe RoomManager est un gestionnaire de pièces qui stocke une liste
+  // de pièces dans l'attribut rooms. Elle a une méthode addRoom pour ajouter une pièce à la liste,
+  // et une méthode displayRoom pour afficher les pièces dans un conteneur HTML. Lors de l'affichage, les pièces sont regroupées par étage.
+  
+  // Enfin, à la fin du code, une instance de RoomManager est créée. Cependant, il y a une
+  // petite erreur dans le code : la classe RoomManager est également utilisée comme une variable, 
+  //ce qui peut causer des problèmes. Vous devriez renommer l'instance pour éviter cette confusion, 
+  //peut-être quelque chose comme const roomManagerInstance = new RoomManager();.
+  
+  
+  </script>
